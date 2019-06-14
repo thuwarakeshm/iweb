@@ -1,0 +1,37 @@
+{% extends 'web/base.html' %}
+{% load static %}
+{% block title %}
+{% endblock title %}
+
+{% block seo %}
+{% endblock seo %}
+
+{% block extra_style %}
+<link rel="stylesheet" href="{% static 'web/clients.css' %}">
+{% endblock extra_style %}
+
+{% block content %}
+<section class="hero is-medium is-primary is-bold">
+    <div class="hero-body">
+        <div class="container">
+            <div style="overflow:hidden;">
+                <h1 class="title animated slideInUp">
+                    Innaun Success Stories
+                </h1>
+            </div>
+            <div style="overflow:hidden;">
+                <h2 class="subtitle animated slideInDown">
+                    Here from our clients about our engagement with them.
+                </h2>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="section body"></section>
+{% endblock content %}
+
+
+{% block extra_script %}
+<script src="{% static 'web/clients.js' %}"></script>
+{% endblock extra_script %}

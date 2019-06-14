@@ -1,0 +1,136 @@
+{% extends 'web/base.html' %}
+{% load static %}
+{% block title %}
+{% endblock title %}
+
+{% block seo %}
+{% endblock seo %}
+
+{% block extra_style %}
+<link rel="stylesheet" href="{% static 'web/solutions.css' %}">
+{% endblock extra_style %}
+
+{% block content %}
+<section class="hero is-medium is-primary is-bold" style="margin:auto;">
+    <div class="hero-body">
+        <div class="container">
+            <div style="overflow:hidden">
+                <h1 class="title has-text-centered-mobile animated slideInUp">
+                    Innaun Solutions
+                </h1>
+            </div>
+            <div style="overflow:hidden">
+                <h2 class="subtitle has-text-centered-mobile animated slideInDown">
+                    Your digital wings to dream big in your business
+                </h2>
+            </div>
+        </div>
+    </div>
+</section>
+<section class="section body" id='solutions'>
+    <div class="container columns">
+        <div class="item-image column">
+            <figure class="image is-1by1">
+                <img src="https://via.placeholder.com/360?text=Innaun" id='webdev-img'>
+            </figure>
+        </div>
+        <div class="column">
+            <h2 class="title has-text-centered-mobile">Web Development</h2>
+            <p class="subtitle has-text-centered-mobile">Great Websites are the first impression of your business</p>
+            <p class="is-size-6 has-text-centered-mobile">Web sites that are simple, intuitive with an elegant design
+                would build your
+                professional appearance among your clients. Innaun is a big fan of responsive and progressive web
+                designing. We can get your awesome website live in no time.</p>
+            <a href="{% url 'contact' %}" class="button is-primary is-outlined">Learn More</a>
+        </div>
+    </div>
+
+    <div class="container columns">
+
+        <div class="column or2">
+            <h2 class="title has-text-right has-text-centered-mobile">Digital Marketing & SEO</h2>
+            <p class="subtitle has-text-right has-text-centered-mobile">Position yourself well in the largest market in
+                the universe, the internet!</p>
+            <p class="is-size-6 has-text-right has-text-centered-mobile">Explore and utilize the sheer amount of
+                opportunities available in the digital market space. Our experts will help you to rank high on search
+                engines and get your business done, faster, better and cheaper.</p>
+            <a href="{% url 'contact' %}" class="button is-primary is-outlined is-pulled-right">Learn More</a>
+
+        </div>
+
+        <div class="item-image column or1">
+            <figure class="image is-1by1">
+                <img src="https://via.placeholder.com/360?text=Innaun" id='digm-img'>
+            </figure>
+        </div>
+    </div>
+
+    <div class="container columns">
+        <div class="item-image column">
+            <figure class="image is-1by1">
+                <img src="https://via.placeholder.com/360?text=Innaun" id='mobile-img'>
+            </figure>
+        </div>
+        <div class="column">
+            <h2 class="title has-text-centered-mobile">Mobile App Development</h2>
+            <p class="subtitle has-text-centered-mobile">The super shortcut to get into the fingure tips of your clients
+            </p>
+            <p class="is-size-6 has-text-centered-mobile">Mobile apps have revolutionized the digital presence of many
+                organizations around the
+                globe. Do you know how it could boost yours?
+                <br />
+                Innaun could bring your ideas from zero to an app with a very minimum timespan in both Android and iOS
+                platforms.
+            </p>
+            <a href="{% url 'contact' %}" class="button is-primary is-outlined">Learn More</a>
+        </div>
+    </div>
+
+    <div class="container columns">
+
+        <div class="column or2">
+            <h2 class="title has-text-right has-text-centered-mobile">Process Automation and Optimization</h2>
+            <p class="subtitle has-text-right has-text-centered-mobile">Build software systems to automate or simplify
+                business processes</p>
+            <p class="is-size-6 has-text-right has-text-centered-mobile">Automating manual processes could lead to
+                enormous profits, improved quality, and
+                better productivity.
+                <br />
+                Innaun could help you on installing ERP, HRM and other Management Information Systems on your
+                organization. We could bring life to your dream system.</p>
+            <a href="{% url 'contact' %}" class="button is-primary is-outlined is-pulled-right">Learn More</a>
+
+        </div>
+
+        <div class="item-image column or1">
+            <figure class="image is-1by1">
+                <img src="https://via.placeholder.com/360?text=Innaun" id='sysdev-img'>
+            </figure>
+        </div>
+    </div>
+
+    <div class="container columns">
+        <div class="item-image column">
+            <figure class="image is-1by1">
+                <img src="https://via.placeholder.com/360?text=Innaun" id='consult-img'>
+            </figure>
+        </div>
+        <div class="column">
+            <h2 class="title has-text-centered-mobile">Digital Strategy Consultation</h2>
+            <p class="subtitle has-text-centered-mobile">Not sure where to start your digital journey? Its not something
+                to worry about!</p>
+            <p class="is-size-6 has-text-centered-mobile">The Consultation could save you time, effort, money and get
+                you right on the track. Our
+                advisory service could help you figure out what are the sweet spots in your business and how to launch
+                digital solutions to get the maximum benefit out of your investment.
+            </p>
+            <a href="{% url 'contact' %}" class="button is-primary is-outlined">Learn More</a>
+        </div>
+    </div>
+</section>
+{% endblock content %}
+
+
+{% block extra_script %}
+<script src="{% static 'web/solutions.js' %}"></script>
+{% endblock extra_script %}

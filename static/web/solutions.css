@@ -1,0 +1,20 @@
+.item-image {
+  max-width: 360px;
+  max-height: 360px; }
+
+#solutions a {
+  margin-top: 15px; }
+
+.container {
+  margin: auto; }
+
+@media (max-width: 768px) {
+  #solutions .container {
+    display: flex;
+    flex-direction: column; }
+  .or1 {
+    order: 1; }
+  .or2 {
+    order: 2; }
+  .container .column {
+    text-align: center; } }

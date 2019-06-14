@@ -1,0 +1,95 @@
+{% extends 'web/base.html' %}
+{% load static %}
+{% block title %}
+{% endblock title %}
+
+{% block seo %}
+{% endblock seo %}
+
+{% block extra_style %}
+<link rel="stylesheet" href="{% static 'web/contact.css' %}">
+{% endblock extra_style %}
+
+{% block content %}
+<section class="hero is-medium is-primary is-bold">
+    <div class="hero-body">
+        <div class="container">
+            <div style="overflow:hidden">
+                <h1 class="title has-text-centered-mobile animated slideInUp">
+                    Contact Innaun
+                </h1>
+            </div>
+            <div style="overflow:hidden">
+                <h2 class="subtitle has-text-centered-mobile animated slideInDown">
+                    Ping us to open the gateway for digital conversion
+                </h2>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="section body">
+
+
+    <form action="" method="post" style="margin:2%;">
+        {% csrf_token %}
+
+        <p class="subtitle has-text-centered">Let us know your thoughts. We'll get in touch with you!</p>
+
+        <div class="columns">
+
+
+            <div class="field column">
+                <div class="control">
+                    <label for="{{ form.name.id_for_label }}" class="label">Name</label>
+                    {{ form.name.errors }}
+                    {{ form.name }}
+                </div>
+            </div>
+            <div class="field column">
+                <div class="control">
+                    <label for="{{ form.title.id_for_label }}" class="label">Title</label>
+                    {{ form.title.errors }}
+                    {{ form.title }}
+                </div>
+            </div>
+
+        </div>
+
+        <div class="columns">
+            <div class="field column">
+                <div class="control">
+                    <label for="{{ form.email.id_for_label }}" class="label">Email</label>
+                    {{ form.email.errors }}
+                    {{ form.email }}
+                </div>
+            </div>
+            <div class="field column">
+                <div class="control">
+                    <label for="{{ form.company.id_for_label }}" class="label">Organization</label>
+                    {{ form.company.errors }}
+                    {{ form.company }}
+                </div>
+            </div>
+        </div>
+        <div class="field">
+            <div class="control">
+                <label for="{{ form.summary.id_for_label }}" class="label">Summary</label>
+                {{ form.summary.errors }}
+                {{ form.summary }}
+            </div>
+        </div>
+        <div class="field">
+            <div class="control">
+                <button type="submit" class="button is-primary">Submit</button>
+            </div>
+        </div>
+    </form>
+</section>
+
+{% endblock content %}
+
+
+{% block extra_script %}
+<script src="{% static 'web/contact.js' %}"></script>
+{% endblock extra_script %}

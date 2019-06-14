@@ -1,0 +1,38 @@
+{% extends 'web/base.html' %}
+{% load static %}
+
+{% block title %}
+<title>Innaun</title>
+
+{% endblock title %}
+{% block extra_style %}
+<link rel="stylesheet" href="{% static 'web/home.css' %}">
+{% endblock extra_style %}
+
+{% block content %}
+
+<section class="hero is-fullheight is-primary is-bold">
+    <div class="hero-body">
+        <div class="container">
+            <div style="overflow:hidden;margin-bottom:2%;">
+                <h1 class="title animated slideInUp">
+                    Digitally Enlightens the Future of Every Business
+                </h1>
+            </div>
+            <div style="overflow:hidden;">
+                <a href="{% url 'contact' %}" class="button is-light animated slideInDown">Contact Us</a>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="section body"></section>
+
+
+
+
+{% endblock content %}
+
+{% block extra_script %}
+<script src="{% static 'web/home.js' %}"></script>
+{% endblock extra_script %}

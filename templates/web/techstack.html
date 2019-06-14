@@ -1,0 +1,190 @@
+{% extends 'web/base.html' %}
+
+{% load static %}
+{% block title %}
+{% endblock title %}
+
+{% block seo %}
+{% endblock seo %}
+
+{% block extra_style %}
+<link rel="stylesheet" href="{% static 'web/techstack.css' %}">
+{% endblock extra_style %}
+
+{% block content %}
+<section class="hero is-medium is-primary is-bold">
+    <div class="hero-body">
+        <div class="container">
+            <div style="overflow:hidden">
+                <h1 class="title has-text-centered-mobile animated slideInUp">
+                    Innaun Arsenal
+                </h1>
+            </div>
+            <div style="overflow:hidden">
+                <h2 class="subtitle has-text-centered-mobile animated slideInDown">
+                    Technologies that Power the World Today!
+                </h2>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="container" style="margin-top:4%;">
+    <h3 class="title is-3 has-text-centered">Web Technologies</h3>
+    <div class="columns" style="justify-content:center;align-items:center;">
+        <div class="column">
+            <figure class="image is-128x128 tooltip" data-tooltip="angular" style="margin:auto;">
+                <img src="{% static 'web/img/angular-logo.svg' %}">
+            </figure>
+        </div>
+
+        <div class="column">
+            <figure class="image is-128x128 tooltip" data-tooltip="react" style="margin:auto;">
+                <img src="{% static 'web/img/react-logo.png' %}">
+            </figure>
+        </div>
+
+        <div class="column">
+            <figure class="image is-128x128 tooltip" data-tooltip="django" style="margin:auto;">
+                <img src="{% static 'web/img/django-logo.png' %}">
+            </figure>
+        </div>
+
+        <div class="column">
+            <figure class="image is-128x128 tooltip" data-tooltip="laravel" style="margin:auto;">
+                <img src="{% static 'web/img/laravel-logo.png' %}">
+            </figure>
+        </div>
+        <div class="column">
+            <figure class="image is-128x128 tooltip" data-tooltip="express" style="margin:auto;">
+                <img src="{% static 'web/img/express-logo.png' %}">
+            </figure>
+        </div>
+    </div>
+</section>
+
+<section class="container" style="margin-top:4%;">
+    <h3 class="title is-3 has-text-centered">Mobile & Hibrid Development</h3>
+    <div class="columns" style="justify-content:center;align-items:center;">
+        <div class="column">
+            <figure class="image is-128x128 tooltip" data-tooltip="react-native" style="margin:auto;">
+                <img src="{% static 'web/img/react-native-logo.png' %}">
+            </figure>
+        </div>
+
+        <div class="column">
+            <figure class="image is-128x128 tooltip" data-tooltip="native-script" style="margin:auto;">
+                <img src="{% static 'web/img/native-script-logo.png' %}">
+            </figure>
+        </div>
+
+        <div class="column">
+                <figure class="image is-128x128 tooltip" data-tooltip="electron" style="margin:auto;">
+                    <img src="{% static 'web/img/electron-logo.png' %}">
+                </figure>
+            </div>
+
+    </div>
+</section>
+
+<section class="container" style="margin-top:4%;">
+    <h3 class="title is-3 has-text-centered">Database Technologies</h3>
+    <div class="columns" style="justify-content:center;align-items:center;">
+        <div class="column">
+            <figure class="image is-128x128 tooltip" data-tooltip="mongo" style="margin:auto;">
+                <img src="{% static 'web/img/mongo-logo.jpeg' %}">
+            </figure>
+        </div>
+
+        <div class="column">
+            <figure class="image is-128x128 tooltip" data-tooltip="mysql" style="margin:auto;">
+                <img src="{% static 'web/img/mysql-logo.png' %}">
+            </figure>
+        </div>
+
+        <div class="column">
+            <figure class="image is-128x128 tooltip" data-tooltip="postgres" style="margin:auto;">
+                <img src="{% static 'web/img/psql-logo.png' %}">
+            </figure>
+        </div>
+
+        <div class="column">
+            <figure class="image is-128x128 tooltip" data-tooltip="neo4j" style="margin:auto;">
+                <img src="{% static 'web/img/neo-logo.png' %}">
+            </figure>
+        </div>
+
+        <div class="column">
+            <figure class="image is-128x128 tooltip" data-tooltip="redis" style="margin:auto;">
+                <img src="{% static 'web/img/redis-logo.png' %}">
+            </figure>
+        </div>
+
+    </div>
+</section>
+
+<section class="container" style="margin-top:4%;">
+    <h3 class="title is-3 has-text-centered">Cloud & DevOps Technologies</h3>
+    <div class="columns" style="justify-content:center;align-items:center;">
+        <div class="column">
+            <figure class="image is-128x128 tooltip" data-tooltip="aws" style="margin:auto;">
+                <img src="{% static 'web/img/aws-logo.png' %}">
+            </figure>
+        </div>
+
+        <div class="column">
+            <figure class="image is-128x128 tooltip" data-tooltip="firebase" style="margin:auto;">
+                <img src="{% static 'web/img/firebase-logo.png' %}">
+            </figure>
+        </div>
+
+        <div class="column">
+            <figure class="image is-128x128 tooltip" data-tooltip="docker" style="margin:auto;">
+                <img src="{% static 'web/img/docker-logo.png' %}">
+            </figure>
+        </div>
+
+    </div>
+</section>
+
+<section class="container" style="margin-top:4%;">
+    <h3 class="title is-3 has-text-centered">Languages & Engines</h3>
+    <div class="columns" style="justify-content:center;align-items:center;">
+        <div class="column">
+            <figure class="image is-128x128 tooltip" data-tooltip="nodejs" style="margin:auto;">
+                <img src="{% static 'web/img/node-logo.png' %}">
+            </figure>
+        </div>
+
+        <div class="column">
+            <figure class="image is-128x128 tooltip" data-tooltip="python" style="margin:auto;">
+                <img src="{% static 'web/img/python-logo.png' %}">
+            </figure>
+        </div>
+
+        <div class="column">
+            <figure class="image is-128x128 tooltip" data-tooltip="java" style="margin:auto;">
+                <img src="{% static 'web/img/Java-logo.png' %}">
+            </figure>
+        </div>
+
+        <div class="column">
+            <figure class="image is-128x128 tooltip" data-tooltip="javascript" style="margin:auto;">
+                <img src="{% static 'web/img/javascript-logo.png' %}">
+            </figure>
+        </div>
+
+        <div class="column">
+            <figure class="image is-128x128 tooltip" data-tooltip="php" style="margin:auto;">
+                <img src="{% static 'web/img/php-logo.png' %}">
+            </figure>
+        </div>
+
+    </div>
+</section>
+{% endblock content %}
+
+
+{% block extra_script %}
+<script src="{% static 'web/techstack.js' %}"></script>
+{% endblock extra_script %}

@@ -1,0 +1,30 @@
+@charset "utf-8";
+
+$primary: #1a1722;
+$dark: #3c423f;
+
+@import "~bulma/bulma";
+
+.hero-body {
+    .container {
+        text-align: center;
+    }
+
+    .title, .subtitle {
+        text-shadow: 1px 1px 2px #1a1722;
+    }
+}
+
+a.navbar-item {
+    transition: transform .5s ease-in-out;
+}
+
+.navbar-item:hover {
+    background:transparent !important;
+}
+
+.navbar-menu .navbar-item:hover {
+    -ms-transform: translate(0, 5px); /* IE 9 */
+    -webkit-transform: translate(0, 5px); /* Safari */
+    transform: translate(0, 5px);
+}

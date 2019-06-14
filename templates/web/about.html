@@ -1,0 +1,74 @@
+{% extends 'web/base.html' %}
+{% load static %}
+{% block title %}
+{% endblock title %}
+
+{% block seo %}
+{% endblock seo %}
+
+{% block extra_style %}
+<link rel="stylesheet" href="{% static 'web/about.css' %}">
+{% endblock extra_style %}
+
+{% block content %}
+<section class="hero is-medium is-primary is-bold">
+    <div class="hero-body">
+        <div class="container" style="overflow:hidden;">
+            <h1 class="title animated slideInUp">
+                The Tale of Innaun
+            </h1>
+            <h2 class="subtitle">
+                <!-- Your digital wings to dream big in your business -->
+            </h2>
+        </div>
+    </div>
+</section>
+
+<section class="section body">
+    <h2 class="title has-text-centered has-text-dark">Why Innaun</h2>
+    <p class="is-size-5  has-text-centered" style="margin-bottom:2%;">Innaun has its roots in friendship. It has been started by three young
+        friends and it is still growing. At Innaun we believe that friendship among professionals is the best way to
+        drive business efficiency.
+        <br>
+        Our team has the ability to transform any business into a technologically advanced organization. Our technical
+        expertise spans over Artificial Intelligence, Internet of things, Software and Mobile Development and a lot
+        more.
+        <br>
+        Our engineers working hard to bring sophisticated technologies at an affordable investment for businesses in
+        all scale.
+    </p>
+    <h2 class="title has-text-centered has-text-dark">Leadership</h2>
+    <div class="columns">
+        <div class="column">
+            <figure class="image is-2by1">
+                <img src="{% static 'web/img/pranavan.jpeg' %}" alt="Rajendran Pranavan">
+            </figure>
+            <p class="title has-text-centered has-text-dark is-4">Rajendran Pranavan</p>
+            <p class="subtitle has-text-centered has-text-primary is-6">MBA(University of Morotuwa), BSc in IT (SLIIT)</p>
+        </div>
+
+        <div class="column">
+            <figure class="image is-2by1">
+                <img src="{% static 'web/img/kuganeshan.jpg' %}" alt="Gopal Kuganeshan">
+            </figure>
+            <p class="title has-text-centered has-text-dark is-4">Gopal Kuganeshan</p>
+            <p class="subtitle has-text-centered has-text-primary is-6">MBA(University of Morotuwa), BSc in IT (SLIIT)</p>
+        </div>
+
+        <div class="column">
+            <figure class="image is-2by1">
+                <img src="{% static 'web/img/thuwarakesh.jpg' %}" alt="Thuwarakesh Murallie">
+            </figure>
+            <p class="title has-text-centered has-text-dark is-4">Thuwarakesh Murallie</p>
+            <p class="subtitle has-text-centered has-text-primary is-6">BSc (hons) Statistics (University of
+                Peradeniya), Adv.Dip in MA(CIMA-UK)</p>
+        </div>
+    </div>
+</section>
+
+{% endblock content %}
+
+
+{% block extra_script %}
+<script src="{% static 'web/about.js' %}"></script>
+{% endblock extra_script %}
